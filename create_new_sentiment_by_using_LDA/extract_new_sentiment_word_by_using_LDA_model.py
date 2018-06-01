@@ -13,6 +13,7 @@
 # 
 # Version: 1.1
 # Date: 2018.4.26
+# Environment：python3.5 + windows10
 
 import jieba
 import jieba.analyse
