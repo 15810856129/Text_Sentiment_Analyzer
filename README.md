@@ -1,6 +1,8 @@
 # Text_Sentiment_Analyzer
 Self-learning record of text sentiment analysis
 
+Environment：python3.5 + windows10
+
 1、create_new_sentiment_dict_and_predict_by_using_rules 项目                                                                               
 
 搜集了知网、百度、搜狗、台湾大学等多个平台的情感词典，对它们进行合并去重后得到新的较为完整的情感词典集合；
