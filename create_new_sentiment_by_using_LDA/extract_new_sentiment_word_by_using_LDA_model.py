@@ -248,8 +248,8 @@ def extract_and_save_new_word(pos_dist, neg_dist, topic_word_neg_matrix,
         提取新的情感词,选取阈值，对candidate_word是否为情感词进行判断
     '''
 
-    pos = [word for i, word in enumerate(candidate_word) if pos_dist[i] < 0.0000114]
-    neg = [word for i, word in enumerate(candidate_word) if neg_dist[i] < 0.0000310]
+    pos = [word for i, word in enumerate(candidate_word) if pos_dist[i] < thresh_pos]
+    neg = [word for i, word in enumerate(candidate_word) if neg_dist[i] < thresh_neg]
 
     print('extracting new positive word number is: ',len(pos))
     print('extracting new negative word number is: ' ,len(neg))
