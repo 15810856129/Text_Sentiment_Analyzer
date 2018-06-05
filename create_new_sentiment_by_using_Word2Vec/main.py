@@ -5,6 +5,8 @@ from word2vec import Word2Vec_Model
 from word2vec import load_file_and_filter
 from word2vec import compute_intensity
 import pickle
+import logging
+import sys
 
 
 
@@ -68,5 +70,12 @@ def main(k_min=0.4, k_mid=0.5):
     
 
 if __name__ == '__main__':
+    
+    program = os.path.basename(sys.argv[0])
+    logger = logging.getLogger(program)
+    
+    logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s')
+    logging.root.setLevel(level=logging.INFO)
+    logging.info("running %s" % ' '.join(sys.argv))
     
     all_senitment_dict, new_sentiment_dict, sentiment_keywords, pred = main()
